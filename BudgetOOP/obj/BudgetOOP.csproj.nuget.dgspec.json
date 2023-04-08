@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/christopherfrederiksandbergpettersson/Projects/BudgetOOP/BudgetOOP/BudgetOOP.csproj": {}
+    "/Users/christopherfrederiksandbergpettersson/Documents/GitHub/sideprojects/BudgetOOP/BudgetOOP.csproj": {}
   },
   "projects": {
-    "/Users/christopherfrederiksandbergpettersson/Projects/BudgetOOP/BudgetOOP/BudgetOOP.csproj": {
+    "/Users/christopherfrederiksandbergpettersson/Documents/GitHub/sideprojects/BudgetOOP/BudgetOOP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/christopherfrederiksandbergpettersson/Projects/BudgetOOP/BudgetOOP/BudgetOOP.csproj",
+        "projectUniqueName": "/Users/christopherfrederiksandbergpettersson/Documents/GitHub/sideprojects/BudgetOOP/BudgetOOP.csproj",
         "projectName": "BudgetOOP",
-        "projectPath": "/Users/christopherfrederiksandbergpettersson/Projects/BudgetOOP/BudgetOOP/BudgetOOP.csproj",
+        "projectPath": "/Users/christopherfrederiksandbergpettersson/Documents/GitHub/sideprojects/BudgetOOP/BudgetOOP.csproj",
         "packagesPath": "/Users/christopherfrederiksandbergpettersson/.nuget/packages/",
-        "outputPath": "/Users/christopherfrederiksandbergpettersson/Projects/BudgetOOP/BudgetOOP/obj/",
+        "outputPath": "/Users/christopherfrederiksandbergpettersson/Documents/GitHub/sideprojects/BudgetOOP/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/christopherfrederiksandbergpettersson/.nuget/NuGet/NuGet.Config"

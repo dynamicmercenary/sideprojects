@@ -9,10 +9,6 @@ namespace BudgetOOP
 		{ get; set; }
         public List<Expense> ExpenseTotal
 		{ get; set; }
-        public decimal Savings
-		{ get; set; }
-        public decimal RemainingIncomeAfterExpenses
-        { get; set; }
         public decimal AmountLeftToSpend
         { get; set; }
 
@@ -22,18 +18,36 @@ namespace BudgetOOP
 			return Income - totalExpenses;
         }
 
-		public decimal CalculateSavings()
+		public (decimal, decimal) CalculateSavings()
 		{
-	        return RemainingIncomeAfterExpenses % AmountLeftToSpend;
+            decimal investing = 2000m;
+            decimal savings = (CalculateRemainingIncomeAfterExpense() - AmountLeftToSpend) - investing;
+            if (savings > 0m)
+            {
+                return (savings, investing);
+            }
+            else if (savings <= 0m && (savings+investing) > 0m)
+            {
+                return (savings + investing, 0m);
+            }
+            else
+            {
+                return (0m, 0m);
+            }
+
+            
 		}
 
-        public Budget(decimal income, List<Expense> expensesList, decimal amountLeftToSpend = 3000.00m)
+        public void AddExpense(string expenseName, decimal expenseAmount)
         {
+            ExpenseTotal.Add(new Expense(expenseName, expenseAmount));
+        }
+
+        public Budget(decimal income, decimal amountLeftToSpend = 3000.00m)
+        {
+            ExpenseTotal = new List<Expense>();
             Income = income;
-            ExpenseTotal = expensesList;
-            RemainingIncomeAfterExpenses = CalculateRemainingIncomeAfterExpense();
             AmountLeftToSpend = amountLeftToSpend;
-            Savings = CalculateSavings();
         }
     }
 }
